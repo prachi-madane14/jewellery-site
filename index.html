@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Pearl &amp; Tide</title>
+<title>Spoil Me Please</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300..600&display=swap" rel="stylesheet">
@@ -13,55 +13,27 @@
   };
 </script>
 <style>
-/* Layout concept: an ocean-to-sand journey. The hero is a tall arch (a shop-window shape) with a necklace swaying inside it;
-   the arch shape returns on every product card. One pinned scroll scene turns an oyster into a necklace. Everything else stays quiet. */
+/* Layout concept: a bright seaside shop where the photography leads. The hero is a tall arch holding a real photo, and the same arch returns on every product card. One pinned scroll scene crossfades three photos while the story changes. */
 :root{
-  --ocean-1:#0E7FB8; --ocean-2:#6CC3E0; --ocean-3:#CFEAF0;
+  --ocean-1:#6CC3E0; --ocean-2:#A9D9E8; --ocean-3:#CFEAF0;
   --sand-1:#F3E3CB; --sand-2:#E8CFA8; --pearl:#FBF8F3; --ink:#1B1F5E; --gold:#C9A55C; --blush:#F2C6C2;
 
-  --bg:#FBF8F3; --surface:#FFFDFA; --fg:#1B1F5E; --muted:#4F5388; --line:rgba(27,31,94,.14);
+  --bg:#FCF9F4; --surface:#FFFEFB; --fg:#1B1F5E; --muted:#4F5388; --line:rgba(27,31,94,.13);
   --gold-ink:#8A6A24;
   --btn-bg:#1B1F5E; --btn-fg:#FBF8F3;
-  --header-bg:rgba(251,248,243,.86); --glass:rgba(251,248,243,.86);
-  --band-sand:#F3E3CB; --band-sky:#DDF0F4; --band-blush:#F7E3E0;
-  --hero-top:#CFEAF0; --hero-mid:#6CC3E0; --hero-bot:#0E7FB8; --hero-fg:#1B1F5E;
-  --wave-back:rgba(251,248,243,.45); --wave-mid:#E8CFA8; --marquee-bg:#F3E3CB;
-  --story-s1:#CFEAF0; --story-s2:#6CC3E0; --story-d1:#0E7FB8; --story-d2:#1B1F5E;
-  --tone-bracelets:#CFEAF0; --tone-necklaces:#F3E3CB; --tone-earrings:#F2C6C2; --tone-anklets:#BFE3EE;
-  --sheen:rgba(255,255,255,.6);
-  --foot-bg:#1B1F5E; --foot-fg:#FBF8F3; --foot-muted:#B9BDE6;
-  --shadow:0 22px 44px -22px rgba(27,31,94,.4);
+  --header-bg:rgba(252,249,244,.88); --glass:rgba(255,254,251,.88);
+  --band-sand:#F7EBD7; --band-sky:#E7F5F8; --band-blush:#FAEAE7;
+  --hero-top:#F1FAFC; --hero-mid:#D6EEF4; --hero-bot:#B4DEEC; --hero-fg:#1B1F5E;
+  --wave-back:rgba(252,249,244,.6); --wave-mid:#F3E3CB; --marquee-bg:#F7EBD7;
+  --story-s1:#F1FAFC; --story-s2:#D3ECF3; --story-d1:#BFE2EE; --story-d2:#A4D5E7;
+  --tone-bracelets:#DCEFF4; --tone-necklaces:#F7E9D2; --tone-earrings:#F8DAD6; --tone-anklets:#D3ECF3; --tone-stacks:#EFDFC8;
+  --sheen:rgba(255,255,255,.65);
+  --foot-bg:#CFEAF0; --foot-fg:#1B1F5E; --foot-muted:#4F5388;
+  --shadow:0 22px 44px -24px rgba(27,31,94,.38);
   --font-display:"Bodoni Moda",Georgia,serif;
   --font-body:Jost,system-ui,sans-serif;
-  --hh:64px;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0F1344; --surface:#171C60; --fg:#FBF8F3; --muted:#B9BDE6; --line:rgba(251,248,243,.16);
-    --gold-ink:#E3C57F; --btn-bg:#FBF8F3; --btn-fg:#1B1F5E;
-    --header-bg:rgba(15,19,68,.86); --glass:rgba(15,19,68,.84);
-    --band-sand:#181C5A; --band-sky:#0B2A66; --band-blush:#241B58;
-    --hero-top:#0A1A52; --hero-mid:#0A4F86; --hero-bot:#0E7FB8; --hero-fg:#FBF8F3;
-    --wave-back:rgba(108,195,224,.3); --wave-mid:#2A3080; --marquee-bg:#181C5A;
-    --story-s1:#12306E; --story-s2:#0B5A93; --story-d1:#0B3C7A; --story-d2:#070A30;
-    --tone-bracelets:#1D5C99; --tone-necklaces:#3A4287; --tone-earrings:#5A3F80; --tone-anklets:#1E6F9B;
-    --sheen:rgba(255,255,255,.14);
-    --foot-bg:#080B30; --shadow:0 22px 44px -22px rgba(0,0,0,.7);
-    color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0F1344; --surface:#171C60; --fg:#FBF8F3; --muted:#B9BDE6; --line:rgba(251,248,243,.16);
-  --gold-ink:#E3C57F; --btn-bg:#FBF8F3; --btn-fg:#1B1F5E;
-  --header-bg:rgba(15,19,68,.86); --glass:rgba(15,19,68,.84);
-  --band-sand:#181C5A; --band-sky:#0B2A66; --band-blush:#241B58;
-  --hero-top:#0A1A52; --hero-mid:#0A4F86; --hero-bot:#0E7FB8; --hero-fg:#FBF8F3;
-  --wave-back:rgba(108,195,224,.3); --wave-mid:#2A3080; --marquee-bg:#181C5A;
-  --story-s1:#12306E; --story-s2:#0B5A93; --story-d1:#0B3C7A; --story-d2:#070A30;
-  --tone-bracelets:#1D5C99; --tone-necklaces:#3A4287; --tone-earrings:#5A3F80; --tone-anklets:#1E6F9B;
-  --sheen:rgba(255,255,255,.14);
-  --foot-bg:#080B30; --shadow:0 22px 44px -22px rgba(0,0,0,.7);
-  color-scheme:dark;
+  --hh:68px;
+  color-scheme:light;
 }
 
 html{scroll-behavior:smooth}
@@ -358,6 +330,53 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
   .rv{transform:none}
   .fp{opacity:.8}
 }
+
+/* ---- real-photo layer ---- */
+.tone-stacks{background:radial-gradient(120% 90% at 25% 12%,var(--sheen),transparent 60%),var(--tone-stacks)}
+.preloader{background:linear-gradient(180deg,var(--pearl),var(--ocean-3));color:var(--ink)}
+.pl-wave path{fill:var(--ocean-3)}
+.pl-logo{width:min(300px,72vw);height:auto;animation:fadeUp .9s ease .25s both}
+.pl-bar{background:rgba(27,31,94,.12)}
+.brand-logo{height:46px;width:auto;display:block}
+.hero .eyebrow{color:var(--hero-fg)}
+.arch-wrap{position:relative;width:min(100%,420px);margin-inline:auto}
+.arch{width:100%;margin:0;border-radius:999px 999px 28px 28px;overflow:hidden;filter:none;border:6px solid var(--surface);box-shadow:0 34px 54px -30px rgba(27,31,94,.5)}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:translate(calc(var(--mx,0) * -8px),calc(var(--my,0) * -6px)) scale(1.07);transition:transform .45s ease-out}
+.polaroid{position:absolute;left:-12px;bottom:7%;width:38%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--surface);box-shadow:var(--shadow);animation:fadeUp 1s ease 2.7s both}
+.polaroid img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-tag{position:absolute;right:-8px;top:9%;background:var(--surface);color:var(--ink);padding:.5rem 1rem;border-radius:999px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;box-shadow:var(--shadow);animation:fadeUp 1s ease 2.9s both;white-space:nowrap}
+.story{height:calc(var(--pin) * 3.2)}
+.story-photos{position:relative;height:min(62vh,540px);aspect-ratio:4/5;max-width:100%;margin-inline:auto;min-width:0}
+.sfig{position:absolute;inset:0;margin:0;border-radius:999px 999px 28px 28px;overflow:hidden;border:6px solid var(--surface);box-shadow:var(--shadow);opacity:var(--o,0);transform:scale(calc(.94 + var(--o,0) * .06))}
+.sfig:first-child{--o:1}
+.sfig img{width:100%;height:100%;object-fit:cover;display:block}
+.bub{background:radial-gradient(circle at 30% 30%,#fff,rgba(255,255,255,.35) 60%,transparent 70%)}
+.cat-card{min-height:0;justify-content:flex-start}
+.cat-card .art-wrap{position:relative;right:auto;top:auto;align-self:flex-end;width:min(58%,270px);aspect-ratio:4/5;border-radius:999px 999px 20px 20px;overflow:hidden;z-index:auto;margin-bottom:18px}
+.cat-card:hover .art-wrap{transform:scale(1.03)}
+.cat-card p{padding-right:64px}
+.cat-card .art-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.card-media{display:block}
+.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--sc,1.02));transition:transform .5s ease-out}
+.tray-item .th img{width:100%;height:100%;object-fit:cover;display:block}
+.tile{display:block}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.charm-wall{position:relative;margin:0 0 clamp(20px,3vw,36px);border-radius:28px;overflow:hidden;border:6px solid var(--surface);box-shadow:var(--shadow);background:var(--surface)}
+.charm-wall img{display:block;width:100%;height:auto}
+.charm-wall figcaption{position:absolute;right:14px;bottom:14px;background:var(--surface);color:var(--ink);padding:.45rem 1rem;border-radius:999px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;box-shadow:var(--shadow)}
+.why{display:grid;gap:18px}
+.why-item{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px;display:grid;gap:10px;align-content:start;min-width:0}
+.why-item h3{font-family:var(--font-display);font-size:1.5rem;font-weight:500;line-height:1.1}
+.why-item p{color:var(--muted)}
+.why-item .ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--band-sky);color:var(--ink)}
+.foot{background:linear-gradient(180deg,#CFEAF0 0,rgba(207,234,240,.9) 28%,rgba(243,227,203,.74) 100%),url(img/sand-water.webp) center/cover}
+.foot-logo{display:block;width:min(360px,82vw);height:auto}
+.contact{border-color:var(--line);background:rgba(255,254,251,.55)}
+.copy{color:var(--gold-ink)}
+@media (min-width:640px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.why{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:767px){.story-photos{height:34vh}.step{grid-template-rows:auto auto auto 1fr;align-items:start;row-gap:4px}.step-ic{grid-row:1 / span 4}}
+@media (prefers-reduced-motion:reduce){.sfig{transform:none}}
 </style>
 
 <!-- shared gradients for all illustrations -->
@@ -387,12 +406,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 <!-- 1. Preloader -->
 <div id="preloader" class="preloader" aria-hidden="true">
   <div class="pl-center">
-    <svg class="pl-pearl" viewBox="0 0 120 120">
-      <circle class="pl-ring" cx="60" cy="60" r="52" fill="none" stroke="#C9A55C" stroke-width="1.6" pathLength="1"/>
-      <circle class="pl-core" cx="60" cy="60" r="34" fill="url(#g-pearl)"/>
-      <ellipse class="pl-core" cx="49" cy="47" rx="10" ry="6" fill="#fff" opacity=".85" transform="rotate(-35 49 47)"/>
-    </svg>
-    <p class="pl-word">Pearl &amp; Tide</p>
+    <img class="pl-logo" src="img/logo.png" alt="">
     <span class="pl-bar"><i></i></span>
   </div>
   <svg class="pl-wave" viewBox="0 0 1200 46" preserveAspectRatio="none"><path id="pl-wave-p" d=""/></svg>
@@ -400,10 +414,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 
 <header class="site-header">
   <div class="wrap bar flex items-center justify-between gap-4">
-    <a href="#home" data-link class="brand" aria-label="Pearl &amp; Tide, home">
-      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11" fill="url(#g-pearl)" stroke="#C9A55C" stroke-width="1.2"/><path d="M4 16c3-3 5 3 9 0s6 3 9 0" fill="none" stroke="#0E7FB8" stroke-width="1.4" stroke-linecap="round"/></svg>
-      Pearl &amp; Tide
-    </a>
+    <a href="#home" data-link class="brand" aria-label="Spoil Me Please, home"><img class="brand-logo" src="img/logo.png" alt="Spoil Me Please"></a>
     <nav class="nav hidden md:flex items-center gap-7" aria-label="Sections">
       <a href="#story" data-link>Story</a>
       <a href="#shop" data-link>Shop</a>
@@ -431,13 +442,13 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 <section id="home" class="hero">
   <div class="wrap hero-grid grid md:grid-cols-[1.1fr_.9fr] items-center gap-10">
     <div>
-      <p class="eyebrow" style="animation:fadeUp .9s ease 1.9s both">Pearls · Crystals · Beads, made by hand</p>
+      <p class="eyebrow" style="animation:fadeUp .9s ease 1.9s both">Beaded jewellery, handcrafted</p>
       <h1 class="hero-title display" aria-label="Wear the Ocean">
         <span class="w"><span style="--d:0">Wear</span></span>
         <span class="w"><span style="--d:1">the</span></span><br>
         <span class="w"><span style="--d:2"><em>Ocean</em></span></span>
       </h1>
-      <p class="hero-lede">Pearls, crystals and turquoise beads, threaded into bracelets, necklaces, earrings and anklets. Pieces start at <span id="hero-min">₹100</span>.</p>
+      <p class="hero-lede">Beaded jewellery handcrafted by five girls and made just for you, so you can feel unique, confident and a little spoiled every day. Pieces start at <span id="hero-min">₹99</span>.</p>
       <div class="hero-cta flex flex-wrap gap-3 mt-7">
         <a href="#collection" data-link class="btn btn-primary">Shop the collection</a>
         <a href="#order" data-link class="btn btn-ghost">How to order</a>
@@ -449,25 +460,12 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
       </dl>
     </div>
 
-    <div class="arch" id="arch">
-      <svg viewBox="0 0 400 520" role="img" aria-label="A pearl necklace with a heart pendant swaying inside an arch of sea light">
-        <defs>
-          <clipPath id="archClip"><path d="M0 520V200A200 200 0 0 1 400 200V520Z"/></clipPath>
-          <linearGradient id="archSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFEAF0"/><stop offset=".55" stop-color="#6CC3E0"/><stop offset="1" stop-color="#0E7FB8"/></linearGradient>
-          <radialGradient id="archSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6DC" stop-opacity=".95"/><stop offset="1" stop-color="#FFF6DC" stop-opacity="0"/></radialGradient>
-        </defs>
-        <g clip-path="url(#archClip)">
-          <rect width="400" height="520" fill="url(#archSea)"/>
-          <circle cx="300" cy="120" r="150" fill="url(#archSun)"/>
-          <g fill="#fff"><polygon class="ray" points="120,0 170,0 260,520 150,520" opacity=".12"/><polygon class="ray" style="animation-delay:-2s" points="220,0 260,0 380,520 290,520" opacity=".1"/><polygon class="ray" style="animation-delay:-4s" points="40,0 70,0 90,520 20,520" opacity=".09"/></g>
-          <g class="floaty" id="floaty"></g>
-          <g class="sway" id="hero-necklace"></g>
-          <g transform="translate(0 395)"><g class="aw" style="--aw:11s"><path id="aw1" fill="rgba(251,248,243,.35)"/></g></g>
-          <g transform="translate(0 420)"><g class="aw" style="--aw:7s"><path id="aw2" fill="#E8CFA8" opacity=".92"/></g></g>
-          <g transform="translate(0 448)"><g class="aw" style="--aw:5s"><path id="aw3" fill="#FBF8F3"/></g></g>
-        </g>
-        <path d="M12 520V204A188 188 0 0 1 388 204V520" fill="none" stroke="#C9A55C" stroke-width="1.6" opacity=".9"/>
-      </svg>
+    <div class="arch-wrap">
+      <div class="arch" id="arch">
+        <img src="img/hero-star-tide.webp" alt="A beaded necklace with a white starfish pendant, worn on a sunny beach">
+      </div>
+      <div class="polaroid"><img src="img/hero-heart-blade.webp" alt="Silver heart and sword earrings"></div>
+      <span class="hero-tag">Made by hand</span>
     </div>
   </div>
   <div class="hero-waves" aria-hidden="true">
@@ -492,35 +490,28 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
         <p class="eyebrow">Our story</p>
         <div class="chapter-stack">
           <article class="chapter" data-ch="0">
-            <h3>It begins at the shoreline.</h3>
-            <p>Every piece starts with a colour from the water: deep blue, turquoise, sea foam, wet sand. We build the collection around those shades, so a pearl, a crystal and a cord all look like they belong to the same tide.</p>
+            <h3>Five girls, every detail.</h3>
+            <p>Spoil Me Please is handcrafted by five girls who pour love into every detail. Each bracelet, necklace and pair of earrings is made by hand, one piece at a time.</p>
           </article>
           <article class="chapter" data-ch="1">
-            <h3>Then we choose what glows.</h3>
-            <p>Faux pearls, moonstone-look beads, rose quartz and crystal accents, picked for a soft lustre that sits well against skin. Dressed up for a wedding or worn with a tee, they hold their own.</p>
+            <h3>Beads with a seaside soul.</h3>
+            <p>Pearls, shell beads, turquoise, rose quartz, amethyst and crystal chips, in colours borrowed from tranquil seaside hues. Soft enough for every day, special enough for an occasion.</p>
           </article>
           <article class="chapter" data-ch="2">
-            <h3>Hands finish the rest.</h3>
-            <p>Strung, knotted and woven by hand, then sent to you with love. If the piece you imagine does not exist yet, we make custom orders, down to your colours and wrist size.</p>
+            <h3>Made just for you.</h3>
+            <p>Beaded jewellery made just for you, so you can feel unique, confident and a little spoiled every day. Have something in mind? We take custom orders too.</p>
           </article>
         </div>
         <ol class="story-progress" id="story-progress" aria-hidden="true">
-          <li class="on"><i></i>Shore</li><li><i></i>Glow</li><li><i></i>Hands</li>
+          <li class="on"><i></i>Makers</li><li><i></i>Materials</li><li><i></i>For you</li>
         </ol>
       </div>
 
-      <svg class="story-art" viewBox="0 0 420 420" role="img" aria-label="An oyster opens and a pearl rises into the middle of a pearl necklace">
-        <ellipse cx="210" cy="388" rx="170" ry="16" fill="var(--sand-2)" opacity=".7"/>
-        <g class="sh-top"><path d="M70 258C80 170 150 140 210 140S340 170 350 258C300 238 120 238 70 258Z" fill="url(#g-shell-out)" stroke="#8A6A24" stroke-width="1.2"/>
-          <path d="M210 244L140 168M210 244L170 150M210 244L210 142M210 244L250 150M210 244L280 168" stroke="#8A6A24" stroke-width="1" opacity=".45" fill="none"/></g>
-        <ellipse cx="210" cy="262" rx="140" ry="26" fill="url(#g-nacre)"/>
-        <circle class="glow" cx="210" cy="262" r="86" fill="url(#g-glow)"/>
-        <g id="story-chain-wrap"><path id="story-chain" fill="none" stroke="#C9A55C" stroke-width="1.6" opacity="0"/></g>
-        <g id="story-beads"></g>
-        <g class="pearl-rise"><circle cx="210" cy="262" r="19" fill="url(#g-pearl)"/><ellipse cx="203" cy="255" rx="6" ry="3.6" fill="#fff" opacity=".85" transform="rotate(-35 203 255)"/></g>
-        <path d="M70 258C70 330 140 378 210 378S350 330 350 258C300 282 120 282 70 258Z" fill="url(#g-shell-out)" stroke="#8A6A24" stroke-width="1.2"/>
-        <path d="M210 276L120 330M210 276L152 362M210 276L182 374M210 276L210 378M210 276L238 374M210 276L268 362M210 276L300 330" stroke="#8A6A24" stroke-width="1" opacity=".45" fill="none"/>
-      </svg>
+      <div class="story-photos">
+        <figure class="sfig"><img src="img/coral-stack.webp" alt="A stack of pearl bracelets with a starfish charm"></figure>
+        <figure class="sfig"><img src="img/ocean-breeze.webp" alt="Turquoise, pearl and metallic bead bracelets on a stand"></figure>
+        <figure class="sfig"><img src="img/charm-bracelet.webp" alt="Gold chain charm bracelets with seashells and starfish"></figure>
+      </div>
     </div>
   </div>
 </section>
@@ -529,9 +520,9 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 <section id="shop" class="section">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow rv">Shop by piece</p>
-      <h2 class="display section-title rv">Four ways to wear the sea.</h2>
-      <p class="lede rv">Tap a category to see every piece in it.</p>
+      <p class="eyebrow rv">Shop by collection</p>
+      <h2 class="display section-title rv">Five collections, one shoreline.</h2>
+      <p class="lede rv">Tap a collection to see every piece in it.</p>
     </header>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-5" id="cat-grid"></div>
   </div>
@@ -542,8 +533,8 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
   <div class="wrap">
     <header class="section-head md:grid-cols-[1fr_auto] md:items-end" style="display:grid">
       <div class="grid gap-3">
-        <p class="eyebrow rv">Best sellers</p>
-        <h2 class="display section-title rv">The pieces everyone reaches for.</h2>
+        <p class="eyebrow rv">Featured pieces</p>
+        <h2 class="display section-title rv">Start with these.</h2>
       </div>
       <div class="rail-ctl">
         <button type="button" class="icon-btn" id="rail-prev" aria-label="Previous pieces"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3L5 9l6 6"/></svg></button>
@@ -559,7 +550,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
   <div class="wrap" style="padding-top:clamp(72px,10vw,120px)">
     <header class="section-head">
       <p class="eyebrow rv">Full collection</p>
-      <h2 class="display section-title rv">Everything on the shelf.</h2>
+      <h2 class="display section-title rv">Every piece, every price.</h2>
       <p class="lede rv">Prices are in rupees. Add what you love to your picks, then send the list to us on WhatsApp.</p>
     </header>
   </div>
@@ -583,9 +574,10 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
   <div class="wrap">
     <header class="section-head">
       <p class="eyebrow rv">The Charm Bar</p>
-      <h2 class="display section-title rv">Build a bracelet, charm by charm.</h2>
-      <p class="lede rv">Pick a base, tap up to seven charms, and send us the design. We confirm the price and timing on WhatsApp.</p>
+      <h2 class="display section-title rv">Mix, match and personalise.</h2>
+      <p class="lede rv">Charms that tell your story, ₹99 each. Build a charm bracelet below and send us the design. We confirm the bracelet base and timing with you on WhatsApp.</p>
     </header>
+    <figure class="charm-wall rv"><img src="img/charm-wall.webp" alt="A wall of metal and enamel charms: starfish, hearts, butterflies, shells, a seahorse, a clover and more"><figcaption>₹99 each</figcaption></figure>
     <div class="charm-grid">
       <div class="stage rv">
         <svg id="charm-svg" viewBox="0 0 640 290" role="img" aria-label="Your charm bracelet preview"></svg>
@@ -632,17 +624,17 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
     <div class="custom rv" style="margin-top:clamp(48px,7vw,88px)">
       <div>
         <p class="eyebrow">Custom orders</p>
-        <h2 class="display" style="font-size:clamp(1.9rem,3.8vw,3rem);margin-block:14px">Your colours. Your initials. Your wrist.</h2>
-        <p class="lede">Tell us what you have in mind and we will work out what is possible. Great for gifts, bridesmaids and matching sets.</p>
+        <h2 class="display" style="font-size:clamp(1.9rem,3.8vw,3rem);margin-block:14px">Have something in mind?</h2>
+        <p class="lede">Get in touch for custom jewellery creations. Tell us the piece, the colours and the occasion, and we will reply on WhatsApp.</p>
         <ul class="perks">
-          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>Pick your own colours and bead mix</li>
-          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>Matching sets of necklace, bracelet and earrings</li>
-          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>Sized to your wrist or ankle</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>Tell us the piece, colours and occasion</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>Charm bracelets can be customised</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="var(--gold-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4 4 8-8"/></svg>We reply with price and timing on WhatsApp</li>
         </ul>
       </div>
       <form id="custom-form" class="grid gap-4" novalidate>
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="field"><label for="cf-name">Your name</label><input class="input" id="cf-name" autocomplete="name" placeholder="Prachi"></div>
+          <div class="field"><label for="cf-name">Your name</label><input class="input" id="cf-name" autocomplete="name" placeholder="Your name"></div>
           <div class="field"><label for="cf-type">Piece</label>
             <select class="input" id="cf-type"><option>Bracelet</option><option>Necklace</option><option>Earrings</option><option>Anklet</option><option>Matching set</option><option>Not sure yet</option></select></div>
         </div>
@@ -655,18 +647,23 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
   </div>
 </section>
 
-<!-- 9. Testimonials / Instagram -->
+<!-- 9. Why us / Instagram -->
 <section id="love" class="section" style="scroll-margin-top:var(--hh)">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow rv">Kind words</p>
-      <h2 class="display section-title rv">Worn, loved, and passed along.</h2>
+      <p class="eyebrow rv">Spoil Me Please</p>
+      <h2 class="display section-title rv">Feel unique, confident, and a little spoiled.</h2>
     </header>
-    <div class="grid md:grid-cols-3 gap-5" id="quotes"></div>
+    <div class="why">
+      <article class="why-item rv"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-9.2C1.2 8.600 3 5 6.600 5c2 0 3.600 1.100 5.400 3.200C13.800 6.100 15.400 5 17.400 5 21 5 22.800 8.600 21.300 11.800 19 16.600 12 21 12 21Z"/></svg></span><h3>Handcrafted by five girls</h3><p>Every piece is made by hand, with love poured into every detail.</p></article>
+      <article class="why-item rv" style="transition-delay:70ms"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 11c1-2 3-3 5-2.500"/></svg></span><h3>Made just for you</h3><p>Beaded jewellery that feels like yours, from soft pearls to bold statements.</p></article>
+      <article class="why-item rv" style="transition-delay:140ms"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.200 5.800L20 11l-5.800 2.200L12 19l-2.200-5.800L4 11l5.800-2.200Z"/></svg></span><h3>Custom creations</h3><p>Have something in mind? Get in touch and we will make it.</p></article>
+      <article class="why-item rv" style="transition-delay:210ms"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 4 4.500.6-3.300 3.100.9 4.500L12 13l-4.100 2.200.9-4.500L5.500 7.600 10 7Z"/><path d="M12 17v4"/></svg></span><h3>The Charm Bar</h3><p>Mix, match and personalise with charms that tell your story. ₹99 each.</p></article>
+    </div>
   </div>
-  <div class="wrap" style="margin-top:56px">
+  <div class="wrap" style="margin-top:64px">
     <div class="flex flex-wrap items-end justify-between gap-4">
-      <div class="grid gap-2"><p class="eyebrow">Instagram</p><h3 class="display" style="font-size:clamp(1.6rem,3vw,2.4rem)">Follow the tide <span id="ig-handle" style="font-style:italic"></span></h3></div>
+      <div class="grid gap-2"><p class="eyebrow">Instagram</p><h3 class="display" style="font-size:clamp(1.6rem,3vw,2.4rem)">Follow along <span id="ig-handle" style="font-style:italic"></span></h3></div>
       <a class="btn btn-ghost" id="ig-link" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
     </div>
   </div>
@@ -680,27 +677,28 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
     <g class="wv" style="--wd:26s"><path id="fw1" fill="var(--foot-bg)"/></g>
   </svg>
   <div class="wrap" style="padding-block:clamp(64px,9vw,110px) 36px">
-    <p class="foot-word">Pearl &amp; Tide</p>
-    <p class="muted" style="max-width:44ch;margin-top:12px">Pearls, crystals and beads, made by hand. Message us any time to order, ask about a piece or start a custom design.</p>
+    <img class="foot-logo" src="img/logo.png" alt="Spoil Me Please">
+    <p style="max-width:46ch;margin-top:20px"><b>Have something in mind?</b> <span class="muted">Get in touch for custom jewellery creations.</span></p>
     <div class="foot-grid" style="margin-top:44px">
       <div class="contact">
         <small>WhatsApp</small><b id="ft-wa"></b>
-        <button type="button" class="copy" id="copy-wa">Copy number</button>
+        <div class="flex flex-wrap gap-x-5"><a class="copy lnk" id="ft-wa-link" href="#" target="_blank" rel="noopener" style="border:0">Message us</a><button type="button" class="copy" id="copy-wa">Copy number</button></div>
       </div>
       <div class="contact">
         <small>Instagram</small><b id="ft-ig"></b>
         <a class="copy lnk" id="ft-ig-link" href="https://www.instagram.com/" target="_blank" rel="noopener" style="border:0">Open profile</a>
       </div>
       <div class="contact">
-        <small>Email</small><b id="ft-mail"></b>
-        <button type="button" class="copy" id="copy-mail">Copy address</button>
+        <small>Custom orders</small>
+        <b style="font-weight:500;font-size:1rem">Tell us the piece, colours and occasion.</b>
+        <a class="copy lnk" href="#order" data-link style="border:0">Start a request</a>
       </div>
       <div class="contact">
         <small>Browse</small>
         <div class="grid gap-1"><a class="lnk" href="#collection" data-link style="justify-self:start">Collection</a><a class="lnk" href="#charm-bar" data-link style="justify-self:start">Charm Bar</a><a class="lnk" href="#order" data-link style="justify-self:start">How to order</a></div>
       </div>
     </div>
-    <p class="muted" style="margin-top:44px;font-size:.85rem">© 2026 Pearl &amp; Tide. Prices in INR. Availability and delivery are confirmed on WhatsApp.</p>
+    <p class="muted" style="margin-top:44px;font-size:.85rem">© 2026 Spoil Me Please. Prices in INR. Availability and delivery are confirmed on WhatsApp.</p>
   </div>
 </footer>
 
@@ -720,18 +718,13 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 <script>
 /* ---------- Settings: edit these ---------- */
 const CONFIG = {
-  brand: 'Pearl & Tide',
-  whatsapp: '91XXXXXXXXXX',          // country code + number, digits only. Replace the X's.
-  whatsappDisplay: '+91 XXXXX XXXXX',
-  instagram: 'yourhandle',           // without the @
-  email: 'you@example.com'
+  brand: 'Spoil Me Please',
+  whatsapp: '917900118977',            // country code + number, digits only
+  whatsappDisplay: '+91 79001 18977',
+  instagram: 'spoil.mee.please'
 };
-const BEST_SELLERS = ['pearl-heart','moonstone','ocean-pearl','pearl-set','silver-bee','turquoise-glow'];
-const TESTIMONIALS = [
-  { sample:true, text:'Wore the Pearl Grace bracelet to a wedding and three people asked where it was from.', who:'Customer name, City' },
-  { sample:true, text:'The Ocean Pearl earrings are so light I forgot I had them on. Ordering again for my sister.', who:'Customer name, City' },
-  { sample:true, text:'Sent my colours on WhatsApp and got a custom anklet that matched my outfit perfectly.', who:'Customer name, City' }
-];
+const CHARM_PRICE = 99;
+const BEST_SELLERS = ['pearl-heart','moonstone-pearl','charm-bracelet','ocean-pearl','pearl-set','coral-stack','star-tide','silver-bee'];
 
 /* ---------- helpers ---------- */
 const $ = (s, r=document) => r.querySelector(s);
@@ -775,172 +768,107 @@ const HEART='M0 .9C-1 .25-1.15-.55-.55-.8C-.25-.92 0-.7 0-.5C0-.7.25-.92.55-.8C1
 const heart=(x,y,s,fill='url(#g-gold)')=>`<path d="${HEART}" transform="translate(${r2(x)} ${r2(y)}) scale(${s})" fill="${fill}" stroke="rgba(120,86,20,.4)" stroke-width="${r2(.9/s)}"/>`;
 const spark=(x,y,s=1,d=0)=>`<g transform="translate(${x} ${y}) scale(${s})"><path class="sp" style="animation-delay:${d}s" d="M0-4L1-1L4 0L1 1L0 4L-1 1L-4 0L-1-1Z" fill="#fff"/></g>`;
 
-function ringPt(th,o={}){const {cx=100,cy=100,rx=68,ry=52,rot=-14}=o;const a=rot*Math.PI/180,x0=rx*Math.cos(th),y0=ry*Math.sin(th);return{x:cx+x0*Math.cos(a)-y0*Math.sin(a),y:cy+x0*Math.sin(a)+y0*Math.cos(a),depth:Math.sin(th),th}}
-function ringBeads(n,spec,o={}){const pts=[];for(let i=0;i<n;i++){const p=ringPt(i/n*TAU,o);p.i=i;pts.push(p)}return pts.sort((a,b)=>a.y-b.y).map(spec).join('')}
-const ringLine=(o={})=>{const {cx=100,cy=100,rx=68,ry=52,rot=-14}=o;return `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" transform="rotate(${rot} ${cx} ${cy})" fill="none" stroke="#C9A55C" stroke-width="1.3"/>`};
-function clasp(th,o){const p=ringPt(th,o);return `<circle cx="${r2(p.x)}" cy="${r2(p.y)}" r="5.2" fill="url(#g-gold)" stroke="rgba(120,86,20,.5)" stroke-width=".6"/><path d="M${r2(p.x)} ${r2(p.y+5)}q-2 9 3 16" stroke="#C9A55C" stroke-width="1.3" fill="none"/>${bead(p.x+3,p.y+23,3.2,'pearl')}`}
-function arcPts(n,x0,y0,x1,y1,sag,a=.04,b=.96){const out=[];for(let i=0;i<n;i++){const t=n===1?.5:a+(b-a)*i/(n-1);out.push({x:x0+(x1-x0)*t,y:y0+(y1-y0)*t+sag*Math.sin(Math.PI*t),t,i})}return out}
-const arcLine=(x0,y0,x1,y1,sag,color='#C9A55C',w=1.2)=>{let d='';for(let i=0;i<=40;i++){const t=i/40;d+=(i?'L':'M')+r2(x0+(x1-x0)*t)+' '+r2(y0+(y1-y0)*t+sag*Math.sin(Math.PI*t))}return `<path d="${d}" fill="none" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/>`};
-const endCaps=(x0,y0,x1,y1)=>`<circle cx="${x0}" cy="${y0}" r="3.4" fill="url(#g-gold)"/><circle cx="${x1}" cy="${y1}" r="3.4" fill="url(#g-gold)"/>`;
-const ears=(fn,{y=100,gap=34,s=1.5}={})=>`<g transform="translate(${100-gap} ${y}) scale(${-s} ${s})">${fn()}</g><g transform="translate(${100+gap} ${y}) scale(${s})">${fn()}</g>`;
-const hook=(c='#C9A55C')=>`<circle cx="0" cy="-31" r="3.4" fill="none" stroke="${c}" stroke-width="1.4"/><path d="M0 -27.6V-23" stroke="${c}" stroke-width="1.4" stroke-linecap="round"/>`;
-
-function anklet(n,spec,{amp=26,k=1,ph=.9,t0=.06,t1=.94,sp=true}={}){
-  const P=t=>[12+148*t,100+amp*Math.sin(TAU*k*t+ph)];
-  let d='';for(let i=0;i<=48;i++){const [x,y]=P(i/48);d+=(i?'L':'M')+r2(x)+' '+r2(y)}
-  let s=`<path d="${d}" fill="none" stroke="#C9A55C" stroke-width="1.4" stroke-linecap="round"/>`;
-  const [lx,ly]=P(0),[rx,ry]=P(1);
-  s+=`<circle cx="${r2(lx)}" cy="${r2(ly)}" r="4.5" fill="none" stroke="#C9A55C" stroke-width="1.6"/>`;
-  s+=`<path d="M${r2(rx)} ${r2(ry)}h28" stroke="#C9A55C" stroke-width="1.4" stroke-dasharray="3 3" fill="none"/>`+heart(rx+34,ry+2,6);
-  for(let i=0;i<n;i++){const t=t0+(t1-t0)*(i+.5)/n;const [x,y]=P(t);const [x2,y2]=P(t+.01);const ang=Math.atan2(y2-y,x2-x)*180/Math.PI;s+=spec(i,x,y,t,ang,n)}
-  if(sp) s+=spark(30,52,1.1,0)+spark(170,148,1,.9)+spark(112,40,.8,1.6);
-  return s;
-}
-
-/* ---------- product illustrations ---------- */
-const ART = {
- 'pearl-grace'(){const o={rx:70,ry:54};return ringLine(o)+ringBeads(20,p=>bead(p.x,p.y,9.4*(1+.1*p.depth),'pearl'),o)+clasp(2.5,o)},
- 'moonstone'(){const o={rx:70,ry:54};return ringLine(o)+ringBeads(18,p=>{const k=p.i%3,s=1+.1*p.depth;return k===2?facet(p.x,p.y,6.6*s,'blue',-14):bead(p.x,p.y,(k?9:9.4)*s,k===1?'moon':'pearl')},o)+clasp(2.5,o)},
- 'macrame'(){const e=(sw,col,da,off=0)=>`<ellipse cx="100" cy="100" rx="68" ry="52" fill="none" stroke="${col}" stroke-width="${sw}"${da?` stroke-dasharray="${da}" stroke-dashoffset="${off}"`:''}/>`;
-  return `<g transform="rotate(-14 100 100)">${e(14,'#B68A45')}${e(14,'#EAD3AB','6 6')}${e(14,'#D4AC66','6 6',6)}${e(4.5,'#FFF3DC','2 10',3)}
-  <path d="M-4 158Q-12 176-10 192M4 158Q12 176 10 192" transform="translate(100 0)" stroke="#C9A55C" stroke-width="3" fill="none" stroke-linecap="round"/>
-  ${bead(90,192,4.4,'turq')}${bead(110,192,4.4,'pearl')}
-  <g transform="translate(100 152)"><rect x="-20" y="-11" width="40" height="22" rx="4" fill="#C9A55C"/><path d="M-18 0L-9-9L0 0L9-9L18 0L9 9L0 0L-9 9Z" fill="#F3E3CB" stroke="#8A6A24" stroke-width=".8"/></g></g>`},
- 'ocean-breeze'(){const o={rx:70,ry:54};return ringLine(o)+ringBeads(20,p=>{const k=p.i%5,s=1+.1*p.depth;return [bead(p.x,p.y,9*s,'turq'),bead(p.x,p.y,7*s,'pearl'),bead(p.x,p.y,6*s,'gold'),bead(p.x,p.y,7.4*s,'turq'),bead(p.x,p.y,8*s,'pearl')][k]},o)+clasp(2.5,o)},
-
- 'pearl-heart'(){const a=arcPts(23,28,22,172,22,98),b=arcPts(16,52,22,148,22,66);
-  return arcLine(28,22,172,22,98)+arcLine(52,22,148,22,66)+endCaps(28,22,172,22)+b.map(p=>bead(p.x,p.y,5,'pearl')).join('')+a.map(p=>bead(p.x,p.y,6.4,'pearl')).join('')+`<circle cx="100" cy="123" r="3" fill="none" stroke="#C9A55C" stroke-width="1.5"/>`+heart(100,140,15)+bead(100,127,3.2,'pearl')},
- 'pearl-link'(){const a=arcPts(8,36,22,164,22,92,.07,.93);
-  const g=['','','','','','','',''].map((_,i)=>[9.5+(i%3),7.5+((i+1)%3)*1.6,(i*41%70)-35]);
-  return arcLine(28,22,172,22,96,'#C9A55C',2)+endCaps(28,22,172,22)+a.map((p,i)=>{const [rx,ry,rot]=g[i];const lk=i<a.length-1?`<circle cx="${r2((p.x+a[i+1].x)/2)}" cy="${r2((p.y+a[i+1].y)/2)}" r="2.6" fill="none" stroke="#C9A55C" stroke-width="1.4"/>`:'';
-   return lk+`<g transform="rotate(${rot} ${r2(p.x)} ${r2(p.y)})"><ellipse cx="${r2(p.x)}" cy="${r2(p.y)}" rx="${rx}" ry="${ry}" fill="url(#g-pearl)"/><ellipse cx="${r2(p.x-rx*.3)}" cy="${r2(p.y-ry*.35)}" rx="${r2(rx*.3)}" ry="${r2(ry*.2)}" fill="#fff" opacity=".8"/></g>`}).join('')},
- 'midnight-glow'(){const a=arcPts(26,30,22,170,22,96);
-  return arcLine(30,22,170,22,96,'#4a4d86',1)+endCaps(30,22,170,22)+a.map(p=>p.i%5===2?facet(p.x,p.y,4.2,'crystal',0):bead(p.x,p.y,5.6,'black')).join('')+`<path d="M100 119v6" stroke="#C9A55C" stroke-width="1.5"/>`+facet(100,140,9,'blue',0)+spark(60,100,1,.3)+spark(148,96,.9,1.4)},
- 'pearl-set'(){const a=arcPts(18,26,16,174,16,58),o={cx:56,cy:140,rx:38,ry:28,rot:-10};
-  return arcLine(26,16,174,16,58)+endCaps(26,16,174,16)+a.map(p=>bead(p.x,p.y,5.2,'pearl')).join('')+heart(100,92,7)
-   +ringLine(o)+ringBeads(14,p=>bead(p.x,p.y,5.4*(1+.1*p.depth),'pearl'),o)
-   +[132,168].map(x=>`<circle cx="${x}" cy="112" r="2.6" fill="url(#g-gold)"/><path d="M${x} 114v8" stroke="#C9A55C" stroke-width="1.2"/>${bead(x,138,9,'pearl')}`).join('')},
- 'pearl-drop'(){const a=arcPts(17,30,18,170,18,66);
-  return arcLine(30,18,170,18,66)+endCaps(30,18,170,18)+a.map(p=>bead(p.x,p.y,6,'pearl')).join('')
-   +[68,132].map(x=>`<circle cx="${x}" cy="118" r="3" fill="none" stroke="#C9A55C" stroke-width="1.4"/><path d="M${x} 121v8" stroke="#C9A55C" stroke-width="1.3"/>${bead(x,134,5.4,'pearl')}<ellipse cx="${x}" cy="156" rx="9.4" ry="13.5" fill="url(#g-pearl)"/><ellipse cx="${x-3}" cy="150" rx="3" ry="4.4" fill="#fff" opacity=".8"/>`).join('')},
-
- 'silver-bee'(){return ears(()=>`${hook('#aab1c2')}<circle cx="0" cy="-19" r="2.2" fill="none" stroke="#aab1c2" stroke-width="1.2"/>
-  <ellipse cx="-11" cy="2" rx="10.5" ry="5.2" transform="rotate(-38 -11 2)" fill="#E8F1FF" opacity=".75" stroke="#9aa3b8" stroke-width=".8"/>
-  <ellipse cx="11" cy="2" rx="10.5" ry="5.2" transform="rotate(38 11 2)" fill="#E8F1FF" opacity=".75" stroke="#9aa3b8" stroke-width=".8"/>
-  <ellipse cx="0" cy="10" rx="8.5" ry="12" fill="url(#g-silver)" stroke="#6b748a" stroke-width=".8"/>
-  <path d="M-7 6H7M-7.6 11H7.6M-7 16H7" stroke="#4a5068" stroke-width="2.4"/>
-  <circle cx="0" cy="-4" r="5" fill="url(#g-silver)" stroke="#6b748a" stroke-width=".8"/>
-  <path d="M-2-8Q-5-14-9-14M2-8Q5-14 9-14" stroke="#6b748a" stroke-width="1" fill="none"/><path d="M-2 21L0 27L2 21Z" fill="#6b748a"/>`)},
- 'dragon-wing'(){return ears(()=>`${hook('#aab1c2')}<circle cx="0" cy="-19" r="2.2" fill="none" stroke="#aab1c2" stroke-width="1.2"/>
-  <g transform="translate(-10 -14)"><path d="M0 0C8-6 22-6 34 6C30 6 28 9 30 16C25 12 21 15 21 22C16 16 10 18 8 28C4 20 1 10 0 0Z" fill="url(#g-wing)" stroke="#2f3550" stroke-width=".9" stroke-linejoin="round"/>
-  <path d="M0 0L33 7M0 0L28 17M0 0L19 23M0 0L8 27" stroke="#2f3550" stroke-width=".8" opacity=".6" fill="none"/><circle cx="0" cy="0" r="3.2" fill="#c0344b" stroke="#6b1e2c" stroke-width=".6"/></g>`,{gap:36})},
- 'heart-blade'(){return ears(()=>`${hook('#aab1c2')}<circle cx="0" cy="-21" r="2.6" fill="url(#g-gold)"/>
-  <path d="${HEART}" transform="translate(0 6) scale(15)" fill="url(#g-heart)" stroke="#8a2236" stroke-width=".06"/>
-  <rect x="-9" y="-18" width="18" height="3.2" rx="1.6" fill="url(#g-gold)" stroke="rgba(120,86,20,.5)" stroke-width=".5"/>
-  <path d="M-2.3-14.8H2.3L2.8 26L0 32L-2.8 26Z" fill="url(#g-silver)" stroke="#7c8594" stroke-width=".6"/><path d="M0-14.8V30" stroke="#fff" stroke-width=".6" opacity=".7"/>`)},
- 'ocean-pearl'(){return ears(()=>`${hook()}${facet(0,-16,6,'blue',0)}<circle cx="0" cy="-7.4" r="2" fill="none" stroke="#C9A55C" stroke-width="1.2"/>${bead(0,6,9.4,'pearl')}${bead(0,22,5.2,'pearl')}${facet(0,32,3.4,'crystal',0)}`)},
- 'rose-drop'(){return ears(()=>`${hook()}${bead(0,-19,3.2,'gold')}<path d="M0-8C11 10 13 20 0 30C-13 20-11 10 0-8Z" fill="url(#g-rose)" stroke="rgba(160,90,96,.6)" stroke-width=".8"/><path d="M0-8L-6 18L0 30M0-8L6 18L0 30M-6 18H6" stroke="#fff" stroke-width=".7" fill="none" opacity=".6"/><ellipse cx="-4" cy="6" rx="2" ry="4" fill="#fff" opacity=".6" transform="rotate(14 -4 6)"/>`)},
-
- 'amber-night'(){return anklet(16,(i,x,y)=>i%3===2?bead(x,y,6.2,'amber'):bead(x,y,7.6,'black'))},
- 'lilac-glow'(){const R=[8.4,6.6,7.6,6];return anklet(15,(i,x,y)=>bead(x,y,R[i%4],'lilac'))},
- 'golden-eclipse'(){return anklet(15,(i,x,y,t,a)=>{const m=7;if(i===m)return `<circle cx="${r2(x)}" cy="${r2(y)}" r="15" fill="url(#g-amber)"/><circle cx="${r2(x+4)}" cy="${r2(y-1)}" r="12.6" fill="url(#g-black)"/>`;const r=5+4*Math.sin(Math.PI*t);return i%4===0?facet(x,y,r*.62,'amber',a):bead(x,y,r,'black')})},
- 'lilac-pearl'(){return anklet(16,(i,x,y)=>i%2?bead(x,y,5.8,'pearl'):bead(x,y,6.9,'lilac'))},
- 'turquoise-glow'(){return anklet(24,(i,x,y)=>i%6===5?bead(x,y,3.3,'gold'):bead(x,y,4.8,'turq'),{amp:22,k:1.1})},
- 'pearl-drift'(){const R=[7,5,8,4.5,6.5,5.5,7.4,4.8,6.2,5.2,7.8];return anklet(11,(i,x,y,t)=>bead(x,y+(i%2?3:-3),R[i%11],'pearl')+(i%3===0?bead(x+6,y-16-i%4*2,2.4,'pearl'):''),{amp:30,k:1.25,ph:.4})}
-};
-const artSVG=(key,cls='')=>`<svg viewBox="0 0 200 200" class="${cls}" role="img" aria-label="${key.replace(/-/g,' ')} illustration">${ART[key]()}</svg>`;
+const artSVG=(key,cls='')=>`<img src="img/${key}.webp" alt="${byId[key]?byId[key].name:''}" loading="lazy" decoding="async" class="${cls}">`;
 
 /* ---------- catalogue ---------- */
 const P=(id,cat,name,price,unit,desc)=>({id,cat,name,price,unit,desc});
 const PRODUCTS=[
- P('pearl-grace','bracelets','Pearl Grace Bracelet',179,'','Lustrous faux pearls for effortless elegance, everyday or special occasions.'),
- P('moonstone','bracelets','Moonstone Pearl Bracelet',299,'','Delicate pearls with natural crystal accents for a soft, sophisticated charm.'),
+ P('pearl-grace','bracelets','Pearl Grace Bracelet',179,'','A timeless bracelet featuring lustrous faux pearls, designed to bring effortless elegance to both everyday looks and special occasions.'),
+ P('moonstone-pearl','bracelets','Moonstone Pearl Bracelet',299,'','Delicate pearls paired with natural crystal accents create a graceful piece that adds a soft, sophisticated charm to your jewellery collection.'),
  P('macrame','bracelets','Macramé Bracelet',149,'each','Handwoven with classic charm.'),
- P('ocean-breeze','bracelets','Ocean Breeze Bracelet',100,'each','Vibrant stack of turquoise, pearl and metallic beads inspired by seaside hues.'),
+ P('ocean-breeze','bracelets','Ocean Breeze Bracelet',100,'each','Inspired by tranquil seaside hues, this vibrant stack of turquoise, pearl and metallic beads.'),
+ P('moonstone-glow','bracelets','Moonstone Glow Bracelet',299,'','A timeless bracelet crafted with luminous shell beads that add a soft, elegant touch to every outfit.'),
+ P('blush-bloom','bracelets','Blush Bloom Bracelet',399,'','Delicate pink crystal chips paired with gold accents for a feminine, effortless everyday look.'),
+ P('seaside-charm','bracelets','Seaside Charm Bracelet',599,'','Discover dazzling elegance in every piece as our curated jewellery collections elevate your style effortlessly.'),
+ P('amethyst-whisper','bracelets','Amethyst Whisper Bracelet',399,'','Handcrafted with natural amethyst chips, offering a minimal design with a calming pop of colour.'),
+ P('pearl-stack','bracelets','Pearl Stack',100,'each','A delicate layered bracelet set featuring pearls and gold accents for effortless everyday elegance.'),
+ P('charm-bracelet','bracelets','Charm Bracelet',599,'each','Playful beach-inspired charm bracelets with seashells, stars and coastal motifs. Can be customised too.'),
+ P('smoky-pearl','bracelets','Smoky Pearl',250,'each','Irregular freshwater pearls in earthy tones for a bold yet sophisticated statement.'),
+ P('jade-trio','bracelets','Jade Trio',199,'each','Natural green gemstone bracelets with a subtle glow-in-the-dark finish.'),
+ P('evil-eye-stack','bracelets','Evil Eye Stack',499,'','A layered bracelet stack with shell beads and a protective charm.'),
+ P('ocean-mist-beaded','bracelets','Ocean Mist Beaded',399,'','Soft pastel beads with gold accents for a timeless, everyday look.'),
+ P('olive-glow','bracelets','Olive Glow',299,'','Green beaded bracelet with a minimal handcrafted finish.'),
+ P('ocean-blue','bracelets','Ocean Blue',149,'','Blue crystal beads with gold accents for a vibrant look.'),
+ P('lucky-pearl','bracelets','Lucky Pearl',199,'','Pearl bracelet with an elephant charm for everyday luck.'),
+ P('star-charm','bracelets','Star Charm',299,'each','Colourful starfish charms on a delicate gold chain.'),
+ P('aqua-pearl','bracelets','Aqua Pearl',399,'','Double-layer bracelet with pearls and turquoise beads.'),
+ P('coastal-pearl','bracelets','Coastal Pearl',499,'','Gold chain with pearls and turquoise-inspired charms.'),
+
+ P('coastal-stack','stacks','Coastal Stack',699,'','Layered pearl and shell bracelets for a timeless coastal look.'),
+ P('coral-stack','stacks','Coral Stack',599,'','A beach-inspired bracelet stack with pearls and a starfish charm.'),
+ P('blush-stack','stacks','Blush Stack',549,'','Soft pink and pearl bracelets designed for effortless everyday styling.'),
+ P('lavender-stack','stacks','Lavender Stack',699,'','A delicate stack of crystal and lavender beaded bracelets.'),
+
  P('pearl-heart','necklaces','Pearl Heart',799,'','Layered pearl necklace with a delicate heart pendant.'),
  P('pearl-link','necklaces','Pearl Link',699,'','Baroque pearls linked on a fine gold chain.'),
- P('midnight-glow','necklaces','Midnight Glow',549,'','Black beads with crystal accents, a subtle statement.'),
- P('pearl-set','necklaces','Pearl Set',1499,'set','Matching pearl necklace, bracelet and earrings.'),
+ P('midnight-glow','necklaces','Midnight Glow',549,'','Black beads with crystal accents for a subtle statement.'),
+ P('pearl-set','necklaces','Pearl Set',1499,'set','Matching pearl necklace, bracelet and earrings for every occasion.'),
  P('pearl-drop','necklaces','Pearl Drop',899,'set','Freshwater pearls with matching drop earrings.'),
+ P('sea-star','necklaces','Sea Star',799,'','Seashell and star charms inspired by the ocean.'),
+ P('midnight-star','necklaces','Midnight Star',599,'','Black beads finished with a delicate star charm.'),
+ P('golden-knot','necklaces','Golden Knot',799,'','Gold lariat necklace with pearl accents and a knot detail.'),
+ P('star-tide','necklaces','Star Tide',499,'','Colourful beads with a playful starfish pendant.'),
+ P('golden-shell','necklaces','Golden Shell',699,'','Statement necklace with natural shell pieces.'),
+ P('ocean-heart','necklaces','Ocean Heart',699,'','Coastal beads finished with a heart charm.'),
+ P('midnight-stone','necklaces','Midnight Stone',649,'','Bold black stones for a modern statement.'),
+ P('azure-cross','necklaces','Azure Cross',499,'','Turquoise beads with a vintage dragonfly charm.'),
+ P('royal-pearl','necklaces','Royal Pearl',749,'','Discover dazzling elegance in every piece as our curated jewellery collections elevate your style effortlessly.'),
+ P('silver-bloom','necklaces','Silver Bloom',499,'','Delicate silver chain with a heart charm.'),
+ P('pearl-line','necklaces','Pearl Line',699,'','Freshwater pearls on a minimal gold chain.'),
+ P('golden-eclipse','necklaces','Golden Eclipse',699,'','Black beads with warm amber crystal accents.'),
+
  P('silver-bee','earrings','Silver Bee',399,'','Antique bee earrings with vintage charm.'),
  P('dragon-wing','earrings','Dragon Wing',449,'','Intricate dragon earrings with gothic details.'),
  P('heart-blade','earrings','Heart Blade',449,'','Sword and heart earrings with an edgy finish.'),
  P('ocean-pearl','earrings','Ocean Pearl',499,'','Freshwater pearls with blue crystal accents.'),
  P('rose-drop','earrings','Rose Drop',399,'','Soft rose quartz drops with a delicate finish.'),
- P('amber-night','anklets','Amber Night',599,'','Black beads with warm crystal accents.'),
- P('lilac-glow','anklets','Lilac Glow',569,'','Lavender gemstones with a soft shimmer.'),
- P('golden-eclipse','anklets','Golden Eclipse',699,'','Black beads with warm amber crystal accents.'),
- P('lilac-pearl','anklets','Lilac Pearl Anklet',649,'','Soft lilac gemstones with elegant pearl details.'),
- P('turquoise-glow','anklets','Turquoise Glow Anklet',499,'','Minimal turquoise beaded piece for everyday wear.'),
- P('pearl-drift','anklets','Pearl Drift Anklet',499,'','Freshwater pearls on a delicate handcrafted strand.')
+ P('honey-drop','earrings','Honey Drop',399,'','Warm citrine stones in a graceful drop design.'),
+ P('pearl-cascade','earrings','Pearl Cascade',449,'','Elegant freshwater pearl drop earrings.'),
+ P('classic-pearl','earrings','Classic Pearl',449,'','Timeless pearl drops for everyday elegance.'),
+ P('amber-night','earrings','Amber Night',599,'','Black beads with warm crystal accents.'),
+ P('lilac-glow','earrings','Lilac Glow',569,'','Lavender gemstones with a soft shimmer.'),
+
+ P('lilac-pearl-anklet','anklets','Lilac Pearl Anklet',649,'','Soft lilac gemstones with elegant pearl details.'),
+ P('turquoise-glow-anklet','anklets','Turquoise Glow Anklet',499,'','Minimal turquoise beaded piece for everyday wear.'),
+ P('pearl-drift-anklet','anklets','Pearl Drift Anklet',499,'','Freshwater pearls on a delicate handcrafted strand.')
 ];
 const byId=Object.fromEntries(PRODUCTS.map(p=>[p.id,p]));
 const CATS=[
- {key:'bracelets',label:'Bracelets',art:'moonstone',blurb:'Stack them, mix them, gift them.',span:'md:col-span-5'},
- {key:'necklaces',label:'Necklaces',art:'pearl-heart',blurb:'Delicate strands to full pearl sets.',span:'md:col-span-7'},
- {key:'earrings',label:'Earrings',art:'ocean-pearl',blurb:'Soft drops and a few with an edge.',span:'md:col-span-7'},
- {key:'anklets',label:'Anklets & Statement',art:'turquoise-glow',blurb:'Beads for the beach, bold for after dark.',span:'md:col-span-5'}
+ {key:'bracelets',label:'Bracelets',art:'moonstone-pearl',blurb:'Pearls, crystals and charms for every wrist.',span:'md:col-span-7'},
+ {key:'necklaces',label:'Necklaces',art:'pearl-heart',blurb:'From pearl strands to seaside statements.',span:'md:col-span-5'},
+ {key:'earrings',label:'Earrings',art:'ocean-pearl',blurb:'Soft drops, and a few with an edge.',span:'md:col-span-4'},
+ {key:'stacks',label:'Bracelet Stacks',art:'coral-stack',blurb:'Layered sets, ready to wear together.',span:'md:col-span-4'},
+ {key:'anklets',label:'Anklets',art:'turquoise-glow-anklet',blurb:'Beaded strands in turquoise, lilac and pearl.',span:'md:col-span-4'}
 ];
-const minPrice=Math.min(...PRODUCTS.map(p=>p.price));
+const minPrice=Math.min(CHARM_PRICE,...PRODUCTS.map(p=>p.price));
 $('#hero-min').textContent=fmt(minPrice);$('#hero-from').textContent=fmt(minPrice);$('#hero-count').textContent=PRODUCTS.length;
 
 /* ---------- waves & hero scene ---------- */
 function wavePath(w,amp,period,y0,h,ph=0){let d=`M0 ${h}L0 ${r2(y0+amp*Math.sin(ph))}`;for(let x=8;x<=w;x+=8)d+=`L${x} ${r2(y0+amp*Math.sin(TAU*x/period+ph))}`;return d+`L${w} ${h}Z`}
 $('#pl-wave-p').setAttribute('d',wavePath(1200,10,300,22,46));
-$('#aw1').setAttribute('d',wavePath(800,10,400,10,140,0));
-$('#aw2').setAttribute('d',wavePath(800,9,400,10,120,1.7));
-$('#aw3').setAttribute('d',wavePath(800,7,400,8,100,3.1));
 $('#hw1').setAttribute('d',wavePath(2400,14,1200,38,120,0));
 $('#hw2').setAttribute('d',wavePath(2400,12,600,60,120,1.4));
 $('#hw3').setAttribute('d',wavePath(2400,9,600,84,120,2.8));
 $('#fw1').setAttribute('d',wavePath(2400,12,600,40,80,.6));
 
-function bez(a,b,c,d,t){const u=1-t;return[u*u*u*a[0]+3*u*u*t*b[0]+3*u*t*t*c[0]+t*t*t*d[0],u*u*u*a[1]+3*u*u*t*b[1]+3*u*t*t*c[1]+t*t*t*d[1]]}
-(function heroNecklace(){
-  let s=`<path d="M192 38q8-14 16 0" fill="none" stroke="#C9A55C" stroke-width="2.4" stroke-linecap="round"/><circle cx="200" cy="44" r="4" fill="url(#g-gold)"/>`;
-  const strands=[{a:[200,48],b:[62,58],c:[46,250],d:[200,306],n:17,r:8},{a:[200,48],b:[120,72],c:[108,196],d:[200,236],n:12,r:6.2}];
-  for(const st of strands){
-    const lp=`M${st.a} C${st.b} ${st.c} ${st.d}`;
-    const mir=q=>[400-q[0],q[1]];
-    s+=`<path d="${lp}" fill="none" stroke="#C9A55C" stroke-width="1.4"/><path d="M${mir(st.a)} C${mir(st.b)} ${mir(st.c)} ${mir(st.d)}" fill="none" stroke="#C9A55C" stroke-width="1.4"/>`;
-    for(let i=0;i<st.n;i++){const t=.1+.84*i/(st.n-1);const p=bez(st.a,st.b,st.c,st.d,t);s+=bead(p[0],p[1],st.r,'pearl')+bead(400-p[0],p[1],st.r,'pearl')}
-  }
-  s+=`<circle cx="200" cy="312" r="4.4" fill="none" stroke="#C9A55C" stroke-width="2"/>`+heart(200,340,26)+bead(200,316,5,'pearl');
-  $('#hero-necklace').innerHTML=s;
-  let f='';for(let i=0;i<16;i++){const x=24+(i*53%352),r=3+(i*7%9);f+=`<g class="fp" style="--du:${9+(i*5%8)}s;--dl:${-(i*1.3)}s;transform-origin:${x}px 520px"><g transform="translate(${x} 500)">${bead(0,0,r,'pearl')}</g></g>`}
-  $('#floaty').innerHTML=f;
-})();
 $('#arch').addEventListener('pointermove',e=>{const b=e.currentTarget.getBoundingClientRect();e.currentTarget.style.setProperty('--mx',((e.clientX-b.left)/b.width*2-1).toFixed(2));e.currentTarget.style.setProperty('--my',((e.clientY-b.top)/b.height*2-1).toFixed(2))});
 
 /* marquee */
-(function(){const words=['Faux pearl','Moonstone','Turquoise','Rose quartz','Amber crystal','Lilac gemstone','Macramé','Freshwater pearl','Sea glass blue'];
+(function(){const words=['Faux pearl','Freshwater pearl','Moonstone','Rose quartz','Amethyst','Citrine','Jade','Turquoise','Shell beads','Macramé','Gold chain','Crystal chips'];
   const one=words.map(w=>`<span>${w}<svg viewBox="0 0 14 14"><path d="M7 0L8.6 5.4L14 7L8.6 8.6L7 14L5.4 8.6L0 7L5.4 5.4Z"/></svg></span>`).join('');
   $('#marquee').innerHTML=one+one;})();
 
 /* ---------- story (pinned) ---------- */
-(function(){
-  const g=$('#story-beads');let s='';const pts=[];
-  const N=15; // beads either side of the centre pearl
-  const total=N*2+1;
-  for(let i=0;i<total;i++){const t=.03+.94*i/(total-1);const x=48+324*t,y=64+86*Math.sin(Math.PI*t);if(i===N)continue;pts.push({x,y,d:Math.abs(t-.5)*2,i})}
-  $('#story-chain').setAttribute('d',pts.length?`M48 64`+Array.from({length:41},(_,k)=>{const t=k/40;return `L${r2(48+324*t)} ${r2(64+86*Math.sin(Math.PI*t))}`}).join(''):'');
-  s=pts.map(p=>`<g class="sb story-bead" data-d="${p.d.toFixed(3)}" style="opacity:0">${p.i%4===0?bead(p.x,p.y,6.2,'gold'):bead(p.x,p.y,9,'pearl')}</g>`).join('');
-  g.innerHTML=s;
-  let b='';for(let i=0;i<14;i++){const sz=6+(i*5%14);b+=`<span class="bub" style="left:${(i*37)%96}%;width:${sz}px;height:${sz}px;--du:${12+(i*3%9)}s;--dl:${-(i*1.7)}s"></span>`}
-  $('#bubbles').innerHTML=b;
-})();
+(function(){let b='';for(let i=0;i<14;i++){const sz=6+(i*5%14);b+=`<span class="bub" style="left:${(i*37)%96}%;width:${sz}px;height:${sz}px;--du:${12+(i*3%9)}s;--dl:${-(i*1.7)}s"></span>`}$('#bubbles').innerHTML=b})();
 const sm=(a,b,x)=>{x=Math.min(1,Math.max(0,(x-a)/(b-a)));return x*x*(3-2*x)};
-const storyEl=$('#story'),pinEl=$('.story-pin'),chs=$$('.chapter'),steps=$$('#story-progress li'),sBeads=$$('.story-bead'),sChain=$('#story-chain');
+const storyEl=$('#story'),pinEl=$('.story-pin'),chs=$$('.chapter'),figs=$$('.sfig'),steps=$$('#story-progress li');
 function storyTick(){
   const r=storyEl.getBoundingClientRect(),total=storyEl.offsetHeight-pinEl.offsetHeight;
   const p=total>0?Math.min(1,Math.max(0,-r.top/total)):0;
-  const open=sm(.04,.3,p),rise=sm(.3,.58,p),thread=sm(.56,.9,p);
-  storyEl.style.setProperty('--p',p.toFixed(3));storyEl.style.setProperty('--open',open.toFixed(3));storyEl.style.setProperty('--rise',rise.toFixed(3));storyEl.style.setProperty('--thread',thread.toFixed(3));
-  const o0=1-sm(.27,.37,p),o1=sm(.27,.37,p)*(1-sm(.63,.73,p)),o2=sm(.63,.73,p);
-  [o0,o1,o2].forEach((o,i)=>chs[i].style.setProperty('--o',o.toFixed(3)));
+  storyEl.style.setProperty('--p',p.toFixed(3));
+  const o0=1-sm(.3,.4,p),o1=sm(.3,.4,p)*(1-sm(.62,.72,p)),o2=sm(.62,.72,p);
+  [o0,o1,o2].forEach((o,i)=>{const v=o.toFixed(3);chs[i].style.setProperty('--o',v);figs[i].style.setProperty('--o',v)});
   const act=o0>=o1&&o0>=o2?0:o1>=o2?1:2;steps.forEach((li,i)=>li.classList.toggle('on',i===act));
-  sChain.style.opacity=Math.min(1,thread*3);
-  sBeads.forEach(el=>{const d=+el.dataset.d,v=Math.min(1,Math.max(0,(thread*1.35-d*.85)/.28));el.style.opacity=v;el.style.transform=`translateY(${(1-v)*-16}px) scale(${.55+.45*v})`});
 }
 
 /* ---------- order state ---------- */
@@ -995,7 +923,7 @@ $('#cat-grid').innerHTML=CATS.map((c,i)=>{const items=PRODUCTS.filter(p=>p.cat==
   return `<button type="button" class="cat-card tone-${c.key} col-span-1 ${c.span} rv" data-cat="${c.key}" style="transition-delay:${i*70}ms"><div class="art-wrap">${artSVG(c.art)}</div><span class="meta">${items.length} pieces · from ${fmt(from)}</span><h3>${c.label}</h3><p>${c.blurb}</p><span class="cat-go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h10M10 5l4 4-4 4"/></svg></span></button>`}).join('');
 $('#cat-grid').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;setFilter(b.dataset.cat);goto('#collection')});
 /* best sellers */
-$('#rail').innerHTML=BEST_SELLERS.map((id,i)=>card(byId[id],i,'Best seller')).join('');wireTilt($('#rail'));
+$('#rail').innerHTML=BEST_SELLERS.map((id,i)=>card(byId[id],i,'Featured')).join('');wireTilt($('#rail'));
 const rail=$('#rail');
 $('#rail-prev').addEventListener('click',()=>rail.scrollBy({left:-320,behavior:'smooth'}));
 $('#rail-next').addEventListener('click',()=>rail.scrollBy({left:320,behavior:'smooth'}));
@@ -1022,12 +950,12 @@ const star=(()=>{let d='';for(let i=0;i<10;i++){const r=i%2?4.6:11,a=-Math.PI/2+
 const CH={
  pearl:{label:'Pearl',svg:()=>bead(0,0,8.4,'pearl')},
  heart:{label:'Heart',svg:()=>`<path d="${HEART}" transform="translate(0 -.6) scale(10.5)" fill="url(#g-heart)" stroke="#8a2236" stroke-width=".07"/>`},
- star:{label:'Star',svg:()=>`<path d="${star}" fill="url(#g-gold)" stroke="rgba(120,86,20,.5)" stroke-width=".6" stroke-linejoin="round"/>`},
- moon:{label:'Moon',svg:()=>`<circle r="10" fill="url(#g-gold)" mask="url(#m-moon)"/>`},
+ starfish:{label:'Starfish',svg:()=>`<path d="${star}" fill="url(#g-turq)" stroke="#0b8794" stroke-width=".6" stroke-linejoin="round"/>`},
  shell:{label:'Shell',svg:()=>`<path d="M0 9L-10 -2Q0 -14 10 -2Z" fill="url(#g-shell)" stroke="#B98F4A" stroke-width=".8" stroke-linejoin="round"/><path d="M0 9L-5 -6M0 9V-8M0 9L5 -6" stroke="#B98F4A" stroke-width=".7" fill="none"/>`},
- drop:{label:'Wave drop',svg:()=>`<path d="M0-10C7-1 8 3 0 10C-8 3-7-1 0-10Z" fill="url(#g-turq)" stroke="#0b8794" stroke-width=".6"/><ellipse cx="-2.6" cy="1" rx="1.4" ry="3" fill="#fff" opacity=".7" transform="rotate(14 -2.6 1)"/>`},
- anchor:{label:'Anchor',svg:()=>`<g fill="none" stroke="#B8913E" stroke-width="1.9" stroke-linecap="round"><circle cx="0" cy="-8" r="2.3"/><path d="M0-5.7V9M-4-3H4M-8 3Q-7 10 0 10Q7 10 8 3M-8 3l-2.4 2.4M8 3l2.4 2.4"/></g>`},
- flower:{label:'Flower',svg:()=>[0,1,2,3,4].map(i=>{const a=i/5*TAU-Math.PI/2;return `<circle cx="${r2(5.4*Math.cos(a))}" cy="${r2(5.4*Math.sin(a))}" r="4.4" fill="url(#g-rose)" stroke="rgba(160,90,96,.5)" stroke-width=".5"/>`}).join('')+bead(0,0,3.2,'gold')}
+ butterfly:{label:'Butterfly',svg:()=>`<path d="M0 0C-4-9-12-9-11-2C-10 3-4 3 0 0ZM0 0C4-9 12-9 11-2C10 3 4 3 0 0Z" fill="#9b7bd1" stroke="#5d3f93" stroke-width=".6"/><path d="M0 0C-3 9-9 10-8 5C-7 1-3 1 0 0ZM0 0C3 9 9 10 8 5C7 1 3 1 0 0Z" fill="#c4a9ea" stroke="#5d3f93" stroke-width=".6"/><path d="M0-5V6" stroke="#3b2a63" stroke-width="1.2" stroke-linecap="round"/>`},
+ clover:{label:'Clover',svg:()=>[[-4.2,-4.2],[4.2,-4.2],[-4.2,4.2],[4.2,4.2]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="4.6" fill="#8fc4a0" stroke="#4d8a63" stroke-width=".6"/>`).join('')+`<path d="M0 0L5 11" stroke="#4d8a63" stroke-width="1.2" stroke-linecap="round"/>`},
+ flower:{label:'Flower',svg:()=>[0,1,2,3,4].map(i=>{const a=i/5*TAU-Math.PI/2;return `<circle cx="${r2(5.4*Math.cos(a))}" cy="${r2(5.4*Math.sin(a))}" r="4.4" fill="url(#g-rose)" stroke="rgba(160,90,96,.5)" stroke-width=".5"/>`}).join('')+bead(0,0,3.2,'gold')},
+ planet:{label:'Planet',svg:()=>`<circle r="6.6" fill="#d9534f" stroke="#8f2a27" stroke-width=".6"/><ellipse rx="12" ry="3.6" transform="rotate(-20)" fill="none" stroke="#C9A55C" stroke-width="1.6"/>`}
 };
 const BASES={gold:'Gold chain',silver:'Silver chain',pearl:'Pearl strand',turq:'Turquoise beads'};
 const MAXC=7;let cBase='gold',cList=[],justAdded=-1;
@@ -1045,11 +973,11 @@ function renderCharm(){
     s+=`<g transform="translate(${r2(x)} ${r2(y)})" class="charm${i===justAdded?' new':''}" data-i="${i}" role="button" tabindex="0" aria-label="Remove ${CH[k].label} charm"><g class="swing" style="--sd:${(3+i*.35).toFixed(2)}s;--sl:${-i*.4}s"><g class="pop"><circle cx="0" cy="4" r="4.6" fill="none" stroke="#C9A55C" stroke-width="1.8"/><path d="M0 8.6V13" stroke="#C9A55C" stroke-width="1.6"/><g transform="translate(0 36) scale(2.2)">${CH[k].svg()}</g></g></g></g>`;
   }
   $('#charm-svg').innerHTML=s;justAdded=-1;
-  $('#charm-count').textContent=`${cList.length} of ${MAXC}`;
-  $('#stage-note').textContent=cList.length?'Tap a charm on the bracelet to remove it':'Tap a charm to add it';
+  $('#charm-count').textContent=cList.length?`${cList.length} of ${MAXC} · ${fmt(cList.length*CHARM_PRICE)}`:`0 of ${MAXC}`;
+  $('#stage-note').textContent=cList.length?'Tap a charm on the bracelet to remove it':'Tap a charm to add it. Charms are ₹99 each.';
   syncCharmSend();
 }
-const charmMsg=()=>`Hi ${CONFIG.brand}! I'd like a custom charm bracelet.\nBase: ${BASES[cBase]}\nCharms: ${cList.length?cList.map(k=>CH[k].label).join(', '):'not chosen yet'}\n\nCould you share the price and how long it takes? Thank you!`;
+const charmMsg=()=>`Hi ${CONFIG.brand}! I'd like a custom charm bracelet.\nBase: ${BASES[cBase]}\nCharms: ${cList.length?cList.map(k=>CH[k].label).join(', '):'not chosen yet'}\nCharm total: ${cList.length} × ${fmt(CHARM_PRICE)} = ${fmt(cList.length*CHARM_PRICE)}\n\nCould you confirm the bracelet price and how long it takes? Thank you!`;
 const syncCharmSend=bindWa($('#charm-send'),charmMsg,()=>{if(!cList.length){toast('Add at least one charm first');return false}return true});
 $('#bases').innerHTML=Object.entries(BASES).map(([k,l])=>`<button type="button" class="chip" data-base="${k}" aria-pressed="${k===cBase}">${l}</button>`).join('');
 $('#bases').addEventListener('click',e=>{const b=e.target.closest('[data-base]');if(!b)return;cBase=b.dataset.base;$$('#bases .chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.base===cBase));renderCharm()});
@@ -1067,15 +995,14 @@ const syncCustom=bindWa($('#cf-send'),customMsg);
 $('#custom-form').addEventListener('input',syncCustom);
 $('#custom-form').addEventListener('submit',e=>e.preventDefault());
 
-/* ---------- testimonials, instagram, footer ---------- */
-$('#quotes').innerHTML=TESTIMONIALS.map((t,i)=>`<figure class="quote rv" style="transition-delay:${i*90}ms">${t.sample?'<span class="sample">Sample</span>':''}<div class="stars" aria-label="5 out of 5">${'<svg viewBox="0 0 14 14"><path d="M7 0L8.6 5.4L14 7L8.6 8.6L7 14L5.4 8.6L0 7L5.4 5.4Z"/></svg>'.repeat(5)}</div><q>${t.text}</q><figcaption class="who">${t.who}</figcaption></figure>`).join('');
+/* ---------- instagram, footer ---------- */
 $('#ig-handle').textContent='@'+CONFIG.instagram;
 const igUrl=`https://www.instagram.com/${CONFIG.instagram}/`;$('#ig-link').href=igUrl;$('#ft-ig-link').href=igUrl;
-(function(){const ids=['pearl-grace','ocean-pearl','pearl-heart','lilac-glow','silver-bee','moonstone','midnight-glow','rose-drop','turquoise-glow','pearl-set'];
+(function(){const ids=['star-tide','pearl-grace','ocean-pearl','pearl-heart','charm-bracelet','silver-bee','coral-stack','pearl-set','jade-trio','rose-drop'];
   const one=ids.map(id=>`<a class="tile tone-${byId[id].cat}" href="${igUrl}" target="_blank" rel="noopener" aria-label="${byId[id].name} on Instagram">${artSVG(id)}<span>${byId[id].name}</span></a>`).join('');$('#insta').innerHTML=one+one})();
-$('#ft-wa').textContent=CONFIG.whatsappDisplay;$('#ft-ig').textContent='@'+CONFIG.instagram;$('#ft-mail').textContent=CONFIG.email;
+$('#ft-wa').textContent=CONFIG.whatsappDisplay;$('#ft-ig').textContent='@'+CONFIG.instagram;
+$('#ft-wa-link').href=`https://wa.me/${CONFIG.whatsapp}`;
 $('#copy-wa').addEventListener('click',async()=>toast(await copy(CONFIG.whatsappDisplay)?'Number copied':'Could not copy'));
-$('#copy-mail').addEventListener('click',async()=>toast(await copy(CONFIG.email)?'Email copied':'Could not copy'));
 
 /* ---------- navigation, reveals, scroll ---------- */
 function goto(sel){const el=$(sel);if(el)el.scrollIntoView({behavior:REDUCED?'auto':'smooth',block:'start'})}
