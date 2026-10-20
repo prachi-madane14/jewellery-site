@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Spoil Me Please</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,10 +209,10 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(18px,2.4vw,28px);display:grid;gap:22px}
 .panel h3{font-family:var(--font-display);font-size:1.3rem;font-weight:500}
 .opts{display:flex;flex-wrap:wrap;gap:8px}
-.charm-btns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-.charm-btn{display:grid;gap:4px;justify-items:center;padding:10px 4px;border-radius:16px;border:1px solid var(--line);font-size:.74rem;letter-spacing:.08em;transition:transform .25s,border-color .25s,background .25s}
+.charm-btns{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.charm-btn{display:grid;gap:4px;justify-items:center;align-content:start;padding:8px 2px;border-radius:16px;border:1px solid var(--line);font-size:.74rem;letter-spacing:.08em;transition:transform .25s,border-color .25s,background .25s}
 .charm-btn:hover{transform:translateY(-3px);border-color:var(--gold);background:var(--band-sand)}
-.charm-btn svg{width:34px;height:34px}
+.charm-btn img{width:42px;height:42px;object-fit:contain}.charm-btn span{font-size:.62rem;line-height:1.15;text-align:center;letter-spacing:.02em}
 .count{font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--muted)}
 
 /* order */
@@ -946,16 +945,27 @@ $('#sort').addEventListener('change',e=>{sortBy=e.target.value;renderGrid()});
 renderChips();renderGrid();
 
 /* ---------- charm bar ---------- */
-const star=(()=>{let d='';for(let i=0;i<10;i++){const r=i%2?4.6:11,a=-Math.PI/2+i*Math.PI/5;d+=(i?'L':'M')+r2(r*Math.cos(a))+' '+r2(r*Math.sin(a))}return d+'Z'})();
 const CH={
- pearl:{label:'Pearl',svg:()=>bead(0,0,8.4,'pearl')},
- heart:{label:'Heart',svg:()=>`<path d="${HEART}" transform="translate(0 -.6) scale(10.5)" fill="url(#g-heart)" stroke="#8a2236" stroke-width=".07"/>`},
- starfish:{label:'Starfish',svg:()=>`<path d="${star}" fill="url(#g-turq)" stroke="#0b8794" stroke-width=".6" stroke-linejoin="round"/>`},
- shell:{label:'Shell',svg:()=>`<path d="M0 9L-10 -2Q0 -14 10 -2Z" fill="url(#g-shell)" stroke="#B98F4A" stroke-width=".8" stroke-linejoin="round"/><path d="M0 9L-5 -6M0 9V-8M0 9L5 -6" stroke="#B98F4A" stroke-width=".7" fill="none"/>`},
- butterfly:{label:'Butterfly',svg:()=>`<path d="M0 0C-4-9-12-9-11-2C-10 3-4 3 0 0ZM0 0C4-9 12-9 11-2C10 3 4 3 0 0Z" fill="#9b7bd1" stroke="#5d3f93" stroke-width=".6"/><path d="M0 0C-3 9-9 10-8 5C-7 1-3 1 0 0ZM0 0C3 9 9 10 8 5C7 1 3 1 0 0Z" fill="#c4a9ea" stroke="#5d3f93" stroke-width=".6"/><path d="M0-5V6" stroke="#3b2a63" stroke-width="1.2" stroke-linecap="round"/>`},
- clover:{label:'Clover',svg:()=>[[-4.2,-4.2],[4.2,-4.2],[-4.2,4.2],[4.2,4.2]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="4.6" fill="#8fc4a0" stroke="#4d8a63" stroke-width=".6"/>`).join('')+`<path d="M0 0L5 11" stroke="#4d8a63" stroke-width="1.2" stroke-linecap="round"/>`},
- flower:{label:'Flower',svg:()=>[0,1,2,3,4].map(i=>{const a=i/5*TAU-Math.PI/2;return `<circle cx="${r2(5.4*Math.cos(a))}" cy="${r2(5.4*Math.sin(a))}" r="4.4" fill="url(#g-rose)" stroke="rgba(160,90,96,.5)" stroke-width=".5"/>`}).join('')+bead(0,0,3.2,'gold')},
- planet:{label:'Planet',svg:()=>`<circle r="6.6" fill="#d9534f" stroke="#8f2a27" stroke-width=".6"/><ellipse rx="12" ry="3.6" transform="rotate(-20)" fill="none" stroke="#C9A55C" stroke-width="1.6"/>`}
+ 'starfish':{label:'Pearly Starfish',img:'img/charm-01.webp',w:240,h:201},
+ 'skeleton-hand':{label:'Skeleton Hand',img:'img/charm-02.webp',w:240,h:336},
+ 'pixel-heart':{label:'Pixel Heart',img:'img/charm-03.webp',w:213,h:201},
+ 'panda':{label:'Panda',img:'img/charm-04.webp',w:150,h:177},
+ 'gold-heart':{label:'Gold Heart',img:'img/charm-05.webp',w:240,h:240},
+ 'seahorse':{label:'Seahorse',img:'img/charm-06.webp',w:168,h:315},
+ 'donut':{label:'Donut',img:'img/charm-07.webp',w:174,h:168},
+ 'pearl-shell':{label:'Pearl Shell',img:'img/charm-08.webp',w:180,h:183},
+ 'coin':{label:'Hands Coin',img:'img/charm-09.webp',w:201,h:204},
+ 'sword-heart':{label:'Sword Heart',img:'img/charm-10.webp',w:207,h:540},
+ 'mermaid-moon':{label:'Mermaid Moon',img:'img/charm-11.webp',w:270,h:288},
+ 'skull':{label:'Skull',img:'img/charm-12.webp',w:141,h:171},
+ 'daisy':{label:'Daisy',img:'img/charm-13.webp',w:153,h:171},
+ 'gold-butterfly':{label:'Gold Butterfly',img:'img/charm-14.webp',w:192,h:177},
+ 'clover':{label:'Silver Clover',img:'img/charm-15.webp',w:159,h:195},
+ 'purple-butterfly':{label:'Purple Butterfly',img:'img/charm-16.webp',w:162,h:132},
+ 'planet':{label:'Red Planet',img:'img/charm-17.webp',w:216,h:171},
+ 'little-fish':{label:'Little Fish',img:'img/charm-18.webp',w:159,h:150},
+ 'scallop':{label:'Scallop',img:'img/charm-19.webp',w:129,h:111},
+ 'teal-shell':{label:'Teal Shell',img:'img/charm-20.webp',w:222,h:210}
 };
 const BASES={gold:'Gold chain',silver:'Silver chain',pearl:'Pearl strand',turq:'Turquoise beads'};
 const MAXC=7;let cBase='gold',cList=[],justAdded=-1;
@@ -970,7 +980,7 @@ function renderCharm(){
   for(let i=0;i<MAXC;i++){
     const [x,y]=qpt((i+1)/(MAXC+1)),k=cList[i];
     if(!k){s+=`<circle class="slot" cx="${r2(x)}" cy="${r2(y+10)}" r="9"/>`;continue}
-    s+=`<g transform="translate(${r2(x)} ${r2(y)})" class="charm${i===justAdded?' new':''}" data-i="${i}" role="button" tabindex="0" aria-label="Remove ${CH[k].label} charm"><g class="swing" style="--sd:${(3+i*.35).toFixed(2)}s;--sl:${-i*.4}s"><g class="pop"><circle cx="0" cy="4" r="4.6" fill="none" stroke="#C9A55C" stroke-width="1.8"/><path d="M0 8.6V13" stroke="#C9A55C" stroke-width="1.6"/><g transform="translate(0 36) scale(2.2)">${CH[k].svg()}</g></g></g></g>`;
+    s+=`<g transform="translate(${r2(x)} ${r2(y)})" class="charm${i===justAdded?' new':''}" data-i="${i}" role="button" tabindex="0" aria-label="Remove ${CH[k].label} charm"><g class="swing" style="--sd:${(3+i*.35).toFixed(2)}s;--sl:${-i*.4}s"><g class="pop"><circle cx="0" cy="4" r="4.6" fill="none" stroke="#C9A55C" stroke-width="1.8"/><path d="M0 8.6V13" stroke="#C9A55C" stroke-width="1.6"/><image href="${CH[k].img}" x="${r2(-CH[k].w/Math.max(CH[k].w,CH[k].h)*27)}" y="${r2(13+ (1-CH[k].h/Math.max(CH[k].w,CH[k].h))*0)}" width="${r2(CH[k].w/Math.max(CH[k].w,CH[k].h)*54)}" height="${r2(CH[k].h/Math.max(CH[k].w,CH[k].h)*54)}"/></g></g></g>`;
   }
   $('#charm-svg').innerHTML=s;justAdded=-1;
   $('#charm-count').textContent=cList.length?`${cList.length} of ${MAXC} · ${fmt(cList.length*CHARM_PRICE)}`:`0 of ${MAXC}`;
@@ -981,7 +991,7 @@ const charmMsg=()=>`Hi ${CONFIG.brand}! I'd like a custom charm bracelet.\nBase:
 const syncCharmSend=bindWa($('#charm-send'),charmMsg,()=>{if(!cList.length){toast('Add at least one charm first');return false}return true});
 $('#bases').innerHTML=Object.entries(BASES).map(([k,l])=>`<button type="button" class="chip" data-base="${k}" aria-pressed="${k===cBase}">${l}</button>`).join('');
 $('#bases').addEventListener('click',e=>{const b=e.target.closest('[data-base]');if(!b)return;cBase=b.dataset.base;$$('#bases .chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.base===cBase));renderCharm()});
-$('#charm-btns').innerHTML=Object.entries(CH).map(([k,c])=>`<button type="button" class="charm-btn" data-charm="${k}" aria-label="Add ${c.label}"><svg viewBox="-13 -13 26 26" aria-hidden="true">${c.svg()}</svg>${c.label}</button>`).join('');
+$('#charm-btns').innerHTML=Object.entries(CH).map(([k,c])=>`<button type="button" class="charm-btn" data-charm="${k}" aria-label="Add ${c.label}"><img src="${c.img}" alt="" loading="lazy"><span>${c.label}</span></button>`).join('');
 $('#charm-btns').addEventListener('click',e=>{const b=e.target.closest('[data-charm]');if(!b)return;if(cList.length>=MAXC)return toast('Bracelet is full. Tap a charm to remove one.');cList.push(b.dataset.charm);justAdded=cList.length-1;renderCharm()});
 $('#charm-svg').addEventListener('click',e=>{const c=e.target.closest('.charm');if(!c)return;cList.splice(+c.dataset.i,1);renderCharm()});
 $('#charm-svg').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const c=e.target.closest('.charm');if(!c)return;e.preventDefault();cList.splice(+c.dataset.i,1);renderCharm()});
@@ -1020,5 +1030,3 @@ function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(()=>{st
 addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);storyTick();
 setTimeout(()=>{const p=$('#preloader');if(p)p.remove()},2800);
 </script>
-
-</body></html>
